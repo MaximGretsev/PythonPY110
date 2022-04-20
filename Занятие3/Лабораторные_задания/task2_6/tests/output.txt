@@ -1,0 +1,116 @@
+[
+    {
+        "id": 7437,
+        "street_type": 3,
+        "score": 0,
+        "length": 25.416664498299966
+    },
+    {
+        "id": 976,
+        "street_type": 3,
+        "score": 0,
+        "length": 27.95669666123965
+    },
+    {
+        "id": 9563,
+        "street_type": 3,
+        "score": 0,
+        "length": 64.10022374039063
+    },
+    {
+        "id": 9572,
+        "street_type": 3,
+        "score": 0,
+        "length": 70.79743080032311
+    },
+    {
+        "id": 8410,
+        "street_type": 3,
+        "score": 0,
+        "length": 83.329263334794
+    },
+    {
+        "id": 965,
+        "street_type": 3,
+        "score": 0,
+        "length": 113.88526296567612
+    },
+    {
+        "id": 422,
+        "street_type": 3,
+        "score": 0,
+        "length": 125.26755556089697
+    },
+    {
+        "id": 956,
+        "street_type": 3,
+        "score": 0,
+        "length": 133.19393421473217
+    },
+    {
+        "id": 955,
+        "street_type": 3,
+        "score": 0,
+        "length": 138.62905323895347
+    },
+    {
+        "id": 9573,
+        "street_type": 3,
+        "score": 0,
+        "length": 169.55420173240776
+    },
+    {
+        "id": 7444,
+        "street_type": 3,
+        "score": 0,
+        "length": 178.05493815561343
+    },
+    {
+        "id": 9566,
+        "street_type": 3,
+        "score": 0,
+        "length": 184.59942228553064
+    },
+    {
+        "id": 970,
+        "street_type": 3,
+        "score": 0,
+        "length": 190.4220306305711
+    },
+    {
+        "id": 975,
+        "street_type": 3,
+        "score": 0,
+        "length": 312.1538520942761
+    },
+    {
+        "id": 971,
+        "street_type": 3,
+        "score": 0,
+        "length": 433.42124067859805
+    },
+    {
+        "id": 959,
+        "street_type": 3,
+        "score": 0,
+        "length": 497.765610787414
+    },
+    {
+        "id": 3932,
+        "street_type": 3,
+        "score": 0,
+        "length": 539.1290280811235
+    },
+    {
+        "id": 964,
+        "street_type": 3,
+        "score": 0,
+        "length": 715.4220935447166
+    },
+    {
+        "id": 957,
+        "street_type": 2,
+        "score": 0,
+        "length": 785.6443408138949
+    }
+]

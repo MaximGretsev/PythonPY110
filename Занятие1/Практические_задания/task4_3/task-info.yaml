@@ -1,0 +1,49 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    [4.36, 6.09, 3.25, 9.78, 2.16, 8.88, 4.58]
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 240
+    length: 38
+    placeholder_text: '[2] * len(my_floats)))  # TODO заменить на repeat'
+    initial_state:
+      length: 49
+      offset: 240
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: repeat(2)))
+  text: |
+    from itertools import repeat
+
+
+    def task():
+        my_floats = [
+            4.356345,
+            6.0934,
+            3.245235,
+            9.77545,
+            2.164234234,
+            8.884234235,
+            4.575235346645
+        ]
+
+        return list(map(round, my_floats, [2] * len(my_floats)))  # TODO заменить на repeat
+
+
+    if __name__ == "__main__":
+        print(task())
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 20 Apr 2022 16:19:44 UTC
+record: -1

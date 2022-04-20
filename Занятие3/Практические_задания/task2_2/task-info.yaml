@@ -1,0 +1,64 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    {
+        "русские слова": "c ними беда :(("
+    }
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 395
+    length: 85
+    placeholder_text: 'print(python_obj)  # TODO распечатать объект как JSON строку
+      с отступами и кодировкой'
+    initial_state:
+      length: 85
+      offset: 395
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: print(json.dumps(python_obj, indent=4, ensure_ascii=False))
+  text: |
+    import json
+
+    OUTPUT_FILE = "output.json"
+    INPUT_FILE = "input.json"
+
+
+    def from_json_file():
+        with open(INPUT_FILE) as f:
+            python_object = json.load(f)
+            return python_object
+
+
+    def to_json_file(python_object):
+        with open(OUTPUT_FILE, "w") as f:
+            json.dump(python_object, f, indent=4, ensure_ascii=False)
+
+
+    if __name__ == "__main__":
+        python_obj = from_json_file()
+        print(python_obj)  # TODO распечатать объект как JSON строку с отступами и кодировкой
+
+        to_json_file(python_obj)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: input.json
+  visible: true
+  text: '{"\u0440\u0443\u0441\u0441\u043a\u0438\u0435 \u0441\u043b\u043e\u0432\u0430":
+    "c \u043d\u0438\u043c\u0438 \u0431\u0435\u0434\u0430 :(("}'
+  learner_created: false
+- name: output.json
+  visible: true
+  text: |-
+    {
+        "русские слова": "c ними беда :(("
+    }
+  learner_created: false
+status: Unchecked
+record: -1

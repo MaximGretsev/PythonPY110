@@ -1,0 +1,51 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    1
+    2
+    3
+    1
+    2
+    3
+    1
+    2
+    3
+    1
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 64
+    length: 64
+    placeholder_text: '...  # TODO бесконечно повторяем элементы кортежа'
+    initial_state:
+      length: 49
+      offset: 64
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: itertools.cycle(a)
+  text: |
+    import itertools
+
+
+    def task():
+        a = (1, 2, 3)
+        repeater = ...  # TODO бесконечно повторяем элементы кортежа
+        for _ in range(10):
+            print(next(repeater))
+
+
+    if __name__ == "__main__":
+        task()
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 20 Apr 2022 16:59:10 UTC
+record: -1

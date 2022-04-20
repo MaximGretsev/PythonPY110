@@ -1,0 +1,62 @@
+[
+    {
+        "score": 0.00040403710013251447,
+        "id": 25007,
+        "density": 0.002539960237964018,
+        "contains_improvement_appeals": 1
+    },
+    {
+        "score": 0.001163313239749512,
+        "id": 22683,
+        "density": 0.007313113999411859,
+        "contains_improvement_appeals": 2
+    },
+    {
+        "score": 0.0014758329774510965,
+        "id": 22758,
+        "density": 0.00927775464028525,
+        "contains_improvement_appeals": 4
+    },
+    {
+        "score": 0.00027509937961621737,
+        "id": 22759,
+        "density": 0.001729399318737291,
+        "contains_improvement_appeals": 1
+    },
+    {
+        "score": 0.0008581744048815001,
+        "id": 22863,
+        "density": 0.005394873057257727,
+        "contains_improvement_appeals": 1
+    },
+    {
+        "score": 0.0017811335188311472,
+        "id": 22931,
+        "density": 0.011197012142826198,
+        "contains_improvement_appeals": 7
+    },
+    {
+        "score": 0.001498173150295026,
+        "id": 23072,
+        "density": 0.00941819508675468,
+        "contains_improvement_appeals": 16
+    },
+    {
+        "score": 0.00032502035941493046,
+        "id": 23103,
+        "density": 0.0020432252116747212,
+        "contains_improvement_appeals": 1
+    },
+    {
+        "score": 0.0015335808237345843,
+        "id": 23236,
+        "density": 0.009640783761472415,
+        "contains_improvement_appeals": 11
+    },
+    {
+        "score": 0.00047028097913217486,
+        "id": 23237,
+        "density": 0.0029563992694600187,
+        "contains_improvement_appeals": 1
+    }
+]

@@ -1,0 +1,67 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    GOLDENROD
+    PURPLE
+    SALMON
+    TURQUOISE
+    CYAN
+  learner_created: false
+- name: input.txt
+  visible: true
+  text: |
+    Goldenrod
+    Purple
+    Salmon
+    Turquoise
+    Cyan
+  learner_created: false
+- name: output.txt
+  visible: true
+  text: |
+    GOLDENROD
+    PURPLE
+    SALMON
+    TURQUOISE
+    CYAN
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 70
+    length: 57
+    placeholder_text: '...  # TODO перезаписать содержимое одного файла в другой'
+    initial_state:
+      length: 57
+      offset: 70
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      with open(INPUT_FILE, "r") as input_file:
+              with open(OUTPUT_FILE, "w") as output_file:
+                  for upper_line in map(str.upper, input_file):
+                      output_file.write(upper_line)
+  text: |
+    INPUT_FILE = "input.txt"
+    OUTPUT_FILE = "output.txt"
+
+
+    def task():
+        ...  # TODO перезаписать содержимое одного файла в другой
+
+
+    if __name__ == "__main__":
+        task()
+
+        with open(OUTPUT_FILE) as file:
+            for line in file:
+                print(line, end="")
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

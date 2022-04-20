@@ -1,0 +1,69 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    Является ли объект итератором? True
+    1
+    2
+    3
+    4
+    5
+    Выполнение некоторого кода ...
+    6
+    7
+    8
+    9
+    10
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 348
+    length: 75
+    placeholder_text: '...)  # TODO как получить от итератора следующий объект?'
+    initial_state:
+      length: 56
+      offset: 343
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: next(iterator_numbers))
+  - offset: 553
+    length: 75
+    placeholder_text: '...)  # TODO как получить от итератора следующий объект?'
+    initial_state:
+      length: 56
+      offset: 528
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: next(iterator_numbers))
+  text: |
+    from itertools import count
+
+
+    def task():
+        iterator_numbers = count(1, 1)  # бесконечный счетчик натуральных чисел, который занимает конечный размер в памяти
+
+        print(f"Является ли объект итератором? {iterator_numbers is iter(iterator_numbers)}")  # Итератор
+        for _ in range(5):  # распечатать первые 5 натуральных чисел
+            print(...)  # TODO как получить от итератора следующий объект?
+
+        print("Выполнение некоторого кода ...")
+
+        for _ in range(5):  # распечатать следующие 5 натуральных чисел
+            print(...)  # TODO как получить от итератора следующий объект?
+
+
+    if __name__ == "__main__":
+        task()
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 20 Apr 2022 16:12:24 UTC
+record: -1

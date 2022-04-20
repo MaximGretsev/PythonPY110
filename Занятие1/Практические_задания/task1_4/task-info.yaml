@@ -1,0 +1,45 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    ['GOLDENROD', 'PURPLE', 'SALMON', 'TURQUOISE', 'CYAN']
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 42
+    length: 27
+    placeholder_text: '[word.upper() for word in words]  # TODO перевести слова в
+      верхний регистр c помощью map'
+    initial_state:
+      length: 88
+      offset: 42
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: list(map(str.upper, words))
+  text: |
+    def task(words: list) -> list:
+        return [word.upper() for word in words]  # TODO перевести слова в верхний регистр c помощью map
+
+
+    if __name__ == "__main__":
+        list_words = [
+            "Goldenrod",
+            "Purple",
+            "Salmon",
+            "Turquoise",
+            "Cyan"
+        ]
+
+        print(task(list_words))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 20 Apr 2022 15:58:23 UTC
+record: -1

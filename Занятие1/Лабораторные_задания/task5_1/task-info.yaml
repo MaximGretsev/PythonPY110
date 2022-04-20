@@ -1,0 +1,43 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    1-a
+    2-b
+    3-c
+    4-d
+    5-e
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 104
+    length: 67
+    placeholder_text: '...  # TODO поэлементно объединить numbers и chars'
+    initial_state:
+      length: 50
+      offset: 104
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: 'zip(numbers, chars):'
+  text: |
+    def task():
+        numbers = [1, 2, 3, 4, 5]
+        chars = ["a", "b", "c", "d", "e"]
+        for number, char in ...  # TODO поэлементно объединить numbers и chars
+            print(f"{number}-{char}")
+
+
+    if __name__ == "__main__":
+        task()
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 20 Apr 2022 17:02:14 UTC
+record: -1

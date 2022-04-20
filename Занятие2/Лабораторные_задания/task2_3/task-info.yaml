@@ -1,0 +1,44 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    1
+    10
+    100
+    1000
+    10000
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 28
+    length: 38
+    placeholder_text: '...  # TODO записать функцию-генератор'
+    initial_state:
+      length: 38
+      offset: 28
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      n = 0
+          while True:
+              yield base ** n
+              n += 1
+  text: |
+    def pow_gen(base: int):
+        ...  # TODO записать функцию-генератор
+
+
+    if __name__ == "__main__":
+        pow_numbers = pow_gen(10)
+
+        for _ in range(5):
+            print(next(pow_numbers))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

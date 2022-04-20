@@ -1,0 +1,51 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    1
+    2
+    3
+    line_4
+    [1, 2, 3]
+  learner_created: false
+- name: input.txt
+  visible: true
+  text: |
+    1
+    2
+    3
+    line_4
+    [1, 2, 3]
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 256
+    length: 77
+    placeholder_text: '# TODO c помощью метода строки strip очистить строку от непечатыемых
+      символов'
+    initial_state:
+      length: 77
+      offset: 256
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: line = line.strip()
+  text: |
+    def task():
+        filename = "input.txt"
+        with open(filename) as f:  # менеджер контекста открывает файл в режиме чтения в текстовом формате "rt"
+            for line in f:  # файл является итератором, который построчно возвращает свое содержимое
+                # TODO c помощью метода строки strip очистить строку от непечатыемых символов
+                print(line)
+
+
+    if __name__ == "__main__":
+        task()
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

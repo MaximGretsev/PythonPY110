@@ -1,0 +1,46 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    [12, 14, 3, 5, 255, 682]
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 223
+    length: 96
+    placeholder_text: '...  # TODO c помощью функции map привести каждый элемент списка
+      к типу int'
+    initial_state:
+      length: 75
+      offset: 223
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: list(map(int, num_list))
+  text: |
+    def task() -> list:
+        num_list = [
+            "12",
+            "14",
+            3.1415926,
+            5,
+            0xFF,  # шестнадцатеричное представление
+            0b1010101010  # бинарное представление представление
+        ]
+
+        return ...  # TODO c помощью функции map привести каждый элемент списка к типу int
+
+
+    if __name__ == "__main__":
+        print(task())
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 20 Apr 2022 16:35:38 UTC
+record: -1

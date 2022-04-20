@@ -1,0 +1,47 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    10
+    10.5
+    11.0
+    11.5
+    12.0
+    12.5
+    13.0
+    13.5
+    14.0
+    14.5
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 57
+    length: 63
+    placeholder_text: '...  # TODO написать функцию-генератор возвращающую целые числа'
+    initial_state:
+      length: 63
+      offset: 57
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      while True:
+              yield start_number
+              start_number += step
+  text: |
+    def count(start_number: float = 1, step: float = 1):
+        ...  # TODO написать функцию-генератор возвращающую целые числа
+
+
+    if __name__ == "__main__":
+        my_count = count(10, 0.5)
+        for _ in range(10):
+            print(next(my_count))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

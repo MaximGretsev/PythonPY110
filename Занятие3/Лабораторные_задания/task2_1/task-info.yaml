@@ -1,0 +1,58 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    {
+        "1": 1,
+        "2": 4,
+        "3": 9,
+        "4": 16,
+        "5": 25,
+        "6": 36,
+        "7": 49,
+        "8": 64,
+        "9": 81,
+        "10": 100
+    }
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 52
+    length: 60
+    placeholder_text: '{}  # TODO c помощью dict comprehension сформировать словарь'
+    initial_state:
+      length: 60
+      offset: 52
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: '{i: i ** 2 for i in range(1, 11)}'
+  - offset: 124
+    length: 45
+    placeholder_text: '...  # TODO сеализовать словарь в JSON строку'
+    initial_state:
+      length: 45
+      offset: 124
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: json.dumps(dict_numbers, indent=4)
+  text: |
+    import json
+
+
+    def task() -> str:
+        dict_numbers = {}  # TODO c помощью dict comprehension сформировать словарь
+        return ...  # TODO сеализовать словарь в JSON строку
+
+
+    if __name__ == "__main__":
+        print(task())
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

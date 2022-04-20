@@ -1,0 +1,37 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 156
+    length: 44
+    placeholder_text: '...)  # TODO используйте запоминающие группы'
+    initial_state:
+      length: 44
+      offset: 156
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: r"@(\w+)\.(\w+)")
+  text: |
+    import re
+
+
+    def task():
+        emails = "abc.test@gmail.com, xyz@test.in, test.first@analyticsvidhya.com, first.test@rest.biz"
+
+        email_pattern = re.compile(...)  # TODO используйте запоминающие группы
+        print(email_pattern.findall(emails))
+
+
+    if __name__ == "__main__":
+        task()
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

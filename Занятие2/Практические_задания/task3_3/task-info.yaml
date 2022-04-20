@@ -1,0 +1,53 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 112
+    length: 97
+    placeholder_text: '# TODO объявить, что переменная count не локальная, а её надо
+      искать в nonlocal области видимости'
+    initial_state:
+      length: 97
+      offset: 112
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: nonlocal count
+  text: |
+    def counter(fn):
+        count = 0
+
+        def wrapper(*args, **kwargs):
+            result = fn(*args, **kwargs)
+
+            # TODO объявить, что переменная count не локальная, а её надо искать в nonlocal области видимости
+            count += 1
+            print(f"Функция {fn} вызвана {count} раз(а)")
+            return result
+
+        return wrapper
+
+
+    @counter
+    def some_func():
+        pass
+
+
+    @counter
+    def other_func():
+        pass
+
+
+    if __name__ == "__main__":
+        some_func()
+        some_func()
+
+        other_func()
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

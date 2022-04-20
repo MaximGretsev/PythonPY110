@@ -1,0 +1,53 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    Один
+    Два
+    Три
+  learner_created: false
+- name: output.txt
+  visible: true
+  text: |
+    Один
+    Два
+    Три
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 178
+    length: 71
+    placeholder_text: '...  # TODO с помощью метода write запишите построчно содержимое
+      списка'
+    initial_state:
+      length: 71
+      offset: 178
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: f.write(word + "\n")
+  text: |
+    def task():
+        list_words = ["Один", "Два", "Три"]
+
+        filename = "output.txt"
+        with open(filename, "w", encoding="utf-8") as f:
+            for word in list_words:
+                ...  # TODO с помощью метода write запишите построчно содержимое списка
+
+        with open(filename, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                print(line)
+
+
+    if __name__ == "__main__":
+        task()
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

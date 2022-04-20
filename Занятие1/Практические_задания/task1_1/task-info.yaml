@@ -1,0 +1,48 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    [5.408326913195984, 2.3259406699226015, 7.432361670424818, 3.2202484376209237]
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 134
+    length: 58
+    placeholder_text: '[get_distance(point) for point in points]  # TODO записать
+      через map'
+    initial_state:
+      length: 68
+      offset: 134
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: list(map(get_distance, points))
+  text: |
+    def get_distance(point: tuple) -> int:
+        return (point[0] ** 2 + point[1] ** 2) ** 0.5
+
+
+    def task(points: list) -> list:
+        return [get_distance(point) for point in points]  # TODO записать через map
+
+
+    if __name__ == "__main__":
+        pts = [
+            (4.5, 3),
+            (2.1, -1),
+            (6.8, -3),
+            (1.4, 2.9)
+        ]
+
+        print(task(pts))
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 20 Apr 2022 15:27:50 UTC
+record: -1

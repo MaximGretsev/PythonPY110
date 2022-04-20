@@ -1,0 +1,44 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    HELLO, WORLD!!!
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 54
+    length: 67
+    placeholder_text: 'fn()  # TODO перевести результат исходной функции в верхний
+      регистр'
+    initial_state:
+      length: 67
+      offset: 54
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      result = fn()
+              result = result.upper()
+              return result
+  text: |
+    def make_string_upper(fn):
+        def wrapper():
+            fn()  # TODO перевести результат исходной функции в верхний регистр
+        return wrapper
+
+
+    @make_string_upper
+    def get_text() -> str:
+        return "Hello, World!!!"
+
+
+    if __name__ == "__main__":
+        print(get_text())
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

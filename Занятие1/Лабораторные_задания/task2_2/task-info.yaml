@@ -1,0 +1,39 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    -51
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 128
+    length: 87
+    placeholder_text: '[num for num in list_numbers if num < 0])  # TODO заменить
+      list comprehension на filter'
+    initial_state:
+      length: 87
+      offset: 126
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: 'filter(lambda x: x < 0, list_numbers))'
+  text: |
+    def task() -> int:
+        list_numbers = [8, -8, 5, 5, -4, -7, -1, -3, 4, 8, -8, -3, -3, 4, 5, -5, 1, -7, 3, -2]
+
+        return sum([num for num in list_numbers if num < 0])  # TODO заменить list comprehension на filter
+
+
+    if __name__ == "__main__":
+        print(task())
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 20 Apr 2022 16:56:57 UTC
+record: -1

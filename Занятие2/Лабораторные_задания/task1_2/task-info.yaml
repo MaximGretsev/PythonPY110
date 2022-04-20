@@ -1,0 +1,36 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    385
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 46
+    length: 71
+    placeholder_text: '...  # TODO записать выражение-генератор для возведения чисел
+      в квадрат'
+    initial_state:
+      length: 71
+      offset: 46
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: (num ** 2 for num in numbers)
+  text: |
+    def task(numbers: list) -> int:
+        gen_exp = ...  # TODO записать выражение-генератор для возведения чисел в квадрат
+        return sum(gen_exp)
+
+
+    if __name__ == "__main__":
+        list_numbers = [i for i in range(1, 11)]  # list(range(1, 11))
+        print(task(list_numbers))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,64 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    ['Goldenrod', 'Purple', 'Salmon', 'Turquoise', 'Cyan']
+    ['Goldenrod', 'Purple', 'Salmon', 'Turquoise', 'Cyan']
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 57
+    length: 49
+    placeholder_text: '...]  # TODO'
+    initial_state:
+      length: 12
+      offset: 57
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: word.capitalize() for word in words]
+  - offset: 160
+    length: 35
+    placeholder_text: '...)  # TODO'
+    initial_state:
+      length: 12
+      offset: 123
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: map(str.capitalize, words))
+  text: |
+    def list_comprehension(words: list) -> list:
+        return [...]  # TODO
+
+
+    def list_map(words: list) -> list:
+        return list(...)  # TODO
+
+
+    def task():
+        list_words = [
+            "goldenROD",
+            "puRPle",
+            "sAlMoN",
+            "TURQUOISE",
+            "cYAN"
+        ]
+
+        print(list_comprehension(list_words))
+        print(list_map(list_words))
+
+
+    if __name__ == "__main__":
+        task()
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 20 Apr 2022 16:53:48 UTC
+record: -1

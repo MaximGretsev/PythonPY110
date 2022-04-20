@@ -1,0 +1,73 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |2
+             *
+            **
+           ***
+          ****
+         *****
+        ******
+       *******
+      ********
+     *********
+    **********
+  learner_created: false
+- name: input.txt
+  visible: true
+  text: |2
+             *
+            **
+           ***
+          ****
+         *****
+        ******
+       *******
+      ********
+     *********
+    **********
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 51
+    length: 51
+    placeholder_text: 'with ... as file:  # TODO открыть указатель на файл'
+    initial_state:
+      length: 51
+      offset: 51
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: 'with open(INPUT_FILE) as file:'
+  - offset: 111
+    length: 87
+    placeholder_text: '...  # TODO файл является итератором, который работает с циклом
+      for в построчном режиме'
+    initial_state:
+      length: 87
+      offset: 111
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      for line in file:
+                  print(line, end="")
+  text: |
+    INPUT_FILE = "input.txt"
+
+
+    def task() -> None:
+        with ... as file:  # TODO открыть указатель на файл
+            ...  # TODO файл является итератором, который работает с циклом for в построчном режиме
+
+
+    if __name__ == "__main__":
+        task()
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

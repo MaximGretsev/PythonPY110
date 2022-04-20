@@ -1,0 +1,1 @@
+{'score': 0.12801590412849398, 'id': 24472, 'density': 0.804765963835364, 'contains_improvement_appeals': 13}

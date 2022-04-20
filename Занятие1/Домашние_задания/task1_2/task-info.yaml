@@ -1,0 +1,24 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  learner_created: false
+- name: main.py
+  visible: true
+  text: |
+    from itertools import repeat
+
+
+    def task(list_args: list) -> bool:
+        return all(map(isinstance, list_args, repeat(int)))
+
+
+    if __name__ == "__main__":
+        print(task([1, 2, 3]))
+        print(task(["str", 2, 3]))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,44 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    10
+    10
+    10
+    10
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 86
+    length: 61
+    placeholder_text: '...:  # TODO повторить переменную a 4 раза'
+    initial_state:
+      length: 42
+      offset: 69
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: 'repeat(a, 4):'
+  text: |
+    from itertools import repeat
+
+
+    def task():
+        a = 10
+        for num in ...:  # TODO повторить переменную a 4 раза
+            print(num)
+
+
+    if __name__ == "__main__":
+        task()
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 20 Apr 2022 17:01:36 UTC
+record: -1

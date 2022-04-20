@@ -1,0 +1,53 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    100
+    110
+    120
+    130
+    140
+    150
+    160
+    170
+    180
+    190
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 129
+    length: 67
+    placeholder_text: '# TODO распечатать с столбик первые 10 чисел бесконечного итератора'
+    initial_state:
+      length: 67
+      offset: 76
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: |-
+      for _ in range(10):
+              number = next(counter)
+              print(number)
+  text: |
+    from itertools import count
+
+
+    def task():
+        counter = count(100, 10)
+
+        # TODO распечатать с столбик первые 10 чисел бесконечного итератора
+
+
+    if __name__ == "__main__":
+        task()
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 20 Apr 2022 16:57:59 UTC
+record: -1

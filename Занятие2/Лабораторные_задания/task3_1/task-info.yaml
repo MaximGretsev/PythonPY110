@@ -1,0 +1,54 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 54
+    length: 54
+    placeholder_text: '# TODO написать проверку положительности аргумента arg'
+    initial_state:
+      length: 54
+      offset: 54
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      if not arg > 0:
+                  raise ValueError("Аргумент функции не является положительным числом")
+  - offset: 179
+    length: 29
+    placeholder_text: '# TODO задекорировать функцию'
+    initial_state:
+      length: 29
+      offset: 179
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: '@positive_check'
+  text: |
+    def positive_check(fn):
+        def wrapper(arg):
+            # TODO написать проверку положительности аргумента arg
+
+            result = fn(arg)
+            return result
+
+        return wrapper
+
+
+    # TODO задекорировать функцию
+    def some_func(num: int):
+        ...
+
+
+    if __name__ == "__main__":
+        some_func(5)  # всё хорошо
+
+        some_func(-5)  # должна быть вызвана ошибка ValueError
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

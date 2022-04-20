@@ -1,0 +1,47 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    7.432361670424818
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 133
+    length: 50
+    placeholder_text: 'max(list(map(get_distance, points)))  # TODO убрать list'
+    initial_state:
+      length: 56
+      offset: 133
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: max(map(get_distance, points))
+  text: |
+    def get_distance(point: tuple) -> int:
+        return (point[0] ** 2 + point[1] ** 2) ** 0.5
+
+
+    def task(points: list) -> int:
+        return max(list(map(get_distance, points)))  # TODO убрать list
+
+
+    if __name__ == "__main__":
+        pts = [
+            (4.5, 3),
+            (2.1, -1),
+            (6.8, -3),
+            (1.4, 2.9)
+        ]
+
+        print(task(pts))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 20 Apr 2022 15:32:50 UTC
+record: -1

@@ -1,0 +1,71 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    4
+    16
+    36
+    64
+    100
+    144
+    196
+    256
+    324
+    400
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 93
+    length: 81
+    placeholder_text: '[i ** 2 for i in iterator_numbers if i % 2 == 0]  # TODO заменить
+      на map и filter'
+    initial_state:
+      length: 81
+      offset: 91
+    initialized_from_dependency: false
+    selected: true
+    status: Unchecked
+    encrypted_possible_answer: 'map(lambda x: x ** 2, filter(lambda x: x % 2 == 0,
+      iterator_numbers))'
+  - offset: 275
+    length: 50
+    placeholder_text: 'num in numbers:  # TODO напечатать первые 10 чисел'
+    initial_state:
+      length: 50
+      offset: 182
+    initialized_from_dependency: false
+    selected: true
+    status: Unchecked
+    encrypted_possible_answer: '_ in range(10):'
+  - offset: 340
+    length: 67
+    placeholder_text: 'num)  # TODO с помощью next получать следующий элемент от итератора'
+    initial_state:
+      length: 67
+      offset: 247
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: next(numbers))
+  text: |
+    from itertools import count
+
+
+    def task():
+        iterator_numbers = count(1, 1)
+        numbers = [i ** 2 for i in iterator_numbers if i % 2 == 0]  # TODO заменить на map и filter
+
+        for num in numbers:  # TODO напечатать первые 10 чисел
+            print(num)  # TODO с помощью next получать следующий элемент от итератора
+
+
+    if __name__ == "__main__":
+        task()
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

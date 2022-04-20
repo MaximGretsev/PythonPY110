@@ -1,0 +1,48 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    ========
+    Hello World
+    ========
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 55
+    placeholder_text: |-
+      def header_footer():  # TODO написать декоратор
+          ...
+    initial_state:
+      length: 55
+      offset: 0
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      def header_footer(fn):
+          def wrapper():
+              print("========")
+              fn()
+              print("========")
+          return wrapper
+  text: |
+    def header_footer():  # TODO написать декоратор
+        ...
+
+
+    @header_footer
+    def my_func():
+        print("Hello World")
+
+
+    if __name__ == "__main__":
+        my_func()
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

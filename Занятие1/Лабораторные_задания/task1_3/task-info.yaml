@@ -1,0 +1,45 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    Cyan
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 149
+    length: 113
+    placeholder_text: '...  # используй ключевую у функции min, по которой она долна
+      определять минимальный элемент'
+    initial_state:
+      length: 92
+      offset: 149
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: min(list_words, key=len)
+  text: |
+    def task() -> str:
+        list_words = [
+            "Goldenrod",
+            "Purple",
+            "Salmon",
+            "Turquoise",
+            "Cyan"
+        ]
+
+        return ...  # используй ключевую у функции min, по которой она долна определять минимальный элемент
+
+
+    if __name__ == "__main__":
+        print(task())
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 20 Apr 2022 16:49:01 UTC
+record: -1

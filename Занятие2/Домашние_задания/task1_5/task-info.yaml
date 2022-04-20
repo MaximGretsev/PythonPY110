@@ -1,0 +1,19 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |
+    from string import ascii_lowercase, ascii_uppercase, digits
+
+
+    if __name__ == "__main__":
+        print(ascii_lowercase)
+        print(ascii_uppercase)
+        print(digits)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

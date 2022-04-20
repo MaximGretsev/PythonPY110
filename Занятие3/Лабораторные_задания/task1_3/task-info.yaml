@@ -1,0 +1,36 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    1,4,9,16,25,36,49,64,81,100
+  learner_created: false
+- name: output.txt
+  visible: true
+  text: |
+    1,4,9,16,25,36,49,64,81,100
+  learner_created: false
+- name: main.py
+  visible: true
+  text: |
+    OUTPUT_FILE = "output.txt"
+
+
+    def task():
+        with open(OUTPUT_FILE, "w") as f:
+            f.write(",".join(str(i ** 2) for i in range(1, 11)))
+            f.write("\n")
+
+
+    if __name__ == "__main__":
+        task()
+
+        with open(OUTPUT_FILE) as file:
+            for line in file:
+                print(line, end="")
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,66 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |2
+             *
+            **
+           ***
+          ****
+         *****
+        ******
+       *******
+      ********
+     *********
+    **********
+  learner_created: false
+- name: output.txt
+  visible: true
+  text: |2
+             *
+            **
+           ***
+          ****
+         *****
+        ******
+       *******
+      ********
+     *********
+    **********
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 45
+    length: 35
+    placeholder_text: '...  # TODO записать лесенку в файл'
+    initial_state:
+      length: 35
+      offset: 45
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      with open(OUTPUT_FILE, "w") as f:
+              for count_asterisk in range(1, 11):
+                  f.write(f"{count_asterisk * '*':>10}\n")
+  text: |
+    OUTPUT_FILE = "output.txt"
+
+
+    def task():
+        ...  # TODO записать лесенку в файл
+
+
+    if __name__ == "__main__":
+        task()
+
+        with open(OUTPUT_FILE) as file:
+            for line in file:
+                print(line, end="")
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

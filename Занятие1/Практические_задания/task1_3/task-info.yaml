@@ -1,0 +1,60 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    (6.8, -3)
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 128
+    length: 94
+    placeholder_text: |-
+      # TODO заменить на функцию max и функцию get_distance
+          list_distances = list(map(get_distance, points))
+          max_distance = max(list_distances)
+
+          for index, current_distance in enumerate(list_distances):
+              if current_distance == max_distance:
+                  return points[index]
+    initial_state:
+      length: 286
+      offset: 128
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: return max(points, key=get_distance)
+  text: |
+    def get_distance(point: tuple) -> int:
+        return (point[0] ** 2 + point[1] ** 2) ** 0.5
+
+
+    def task(points: list) -> tuple:
+        # TODO заменить на функцию max и функцию get_distance
+        list_distances = list(map(get_distance, points))
+        max_distance = max(list_distances)
+
+        for index, current_distance in enumerate(list_distances):
+            if current_distance == max_distance:
+                return points[index]
+
+
+    if __name__ == "__main__":
+        pts = [
+            (4.5, 3),
+            (2.1, -1),
+            (6.8, -3),
+            (1.4, 2.9)
+        ]
+
+        print(task(pts))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 20 Apr 2022 17:19:26 UTC
+record: -1
