@@ -1,3 +1,4 @@
+import traceback
 from traceback import print_exc
 
 
@@ -14,6 +15,11 @@ def second_gen(input_):
     input_ += 1
 
 
+def plus_num(input_):
+    a = input_ + 1
+    print(a)
+
+
 if __name__ == "__main__":
     my_second_gen = second_gen(10)
 
@@ -22,6 +28,8 @@ if __name__ == "__main__":
 
     try:
         print(next(my_second_gen))
-    except StopIteration:
+    except StopIteration as e:
+        print(type(e))
         print("Генератор закончился")
+        # print(e)
         print_exc()

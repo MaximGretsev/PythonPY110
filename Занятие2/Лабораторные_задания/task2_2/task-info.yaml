@@ -17,15 +17,15 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 57
-    length: 63
+  - offset: 76
+    length: 91
     placeholder_text: '...  # TODO написать функцию-генератор возвращающую целые числа'
     initial_state:
       length: 63
       offset: 57
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       while True:
               yield start_number
@@ -43,5 +43,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 27 Apr 2022 17:05:46 UTC
 record: -1

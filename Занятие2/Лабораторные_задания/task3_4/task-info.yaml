@@ -8,16 +8,16 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 54
-    length: 67
+  - offset: 59
+    length: 31
     placeholder_text: 'fn()  # TODO перевести результат исходной функции в верхний
       регистр'
     initial_state:
       length: 67
       offset: 54
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       result = fn()
               result = result.upper()
@@ -40,5 +40,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 27 Apr 2022 18:01:49 UTC
 record: -1

@@ -4,15 +4,15 @@ files:
   visible: true
   placeholders:
   - offset: 112
-    length: 97
+    length: 14
     placeholder_text: '# TODO объявить, что переменная count не локальная, а её надо
       искать в nonlocal области видимости'
     initial_state:
       length: 97
       offset: 112
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: nonlocal count
   text: |
     def counter(fn):
@@ -48,6 +48,6 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 post_submission_on_open: true
