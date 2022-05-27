@@ -13,5 +13,11 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
+- name: first_file.txt
+  visible: true
+  learner_created: true
+- name: second_file.txt
+  visible: true
+  learner_created: true
 status: Unchecked
 record: -1

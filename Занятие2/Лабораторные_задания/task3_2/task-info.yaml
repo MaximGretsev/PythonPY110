@@ -3,15 +3,15 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 22
-    length: 143
+  - offset: 27
+    length: 44
     placeholder_text: '# TODO записать обертку для исходной функции'
     initial_state:
       length: 44
       offset: 27
     initialized_from_dependency: false
-    selected: true
-    status: Solved
+    selected: false
+    status: Unchecked
     encrypted_possible_answer: |-
       def wrapper(str_arg):
               if len(str_arg) < 10:
@@ -19,15 +19,15 @@ files:
 
               result = fn(str_arg)
               return result
-  - offset: 209
-    length: 14
+  - offset: 94
+    length: 29
     placeholder_text: '# TODO задекорировать функцию'
     initial_state:
       length: 29
       offset: 94
     initialized_from_dependency: false
-    selected: true
-    status: Solved
+    selected: false
+    status: Unchecked
     encrypted_possible_answer: '@min_len_check'
   text: |
     def min_len_check(fn):
@@ -49,6 +49,6 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Solved
+status: Unchecked
 record: -1
 post_submission_on_open: true

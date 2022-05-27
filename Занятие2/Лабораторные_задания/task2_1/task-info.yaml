@@ -19,25 +19,25 @@ files:
   visible: true
   placeholders:
   - offset: 68
-    length: 9
+    length: 43
     placeholder_text: '# TODO с помощью yield вернуть первое число'
     initial_state:
       length: 43
       offset: 68
     initialized_from_dependency: false
-    selected: true
-    status: Solved
+    selected: false
+    status: Unchecked
     encrypted_possible_answer: yield num
-  - offset: 113
-    length: 13
+  - offset: 147
+    length: 73
     placeholder_text: '# TODO с помощью yield вернуть оставшиеся степени двойки до
       бесконечности'
     initial_state:
       length: 73
       offset: 147
     initialized_from_dependency: false
-    selected: true
-    status: Solved
+    selected: false
+    status: Unchecked
     encrypted_possible_answer: yield 2 ** i
   text: |
     from itertools import count
@@ -60,8 +60,5 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Solved
-feedback:
-  message: Congratulations!
-  time: Wed, 27 Apr 2022 16:57:42 UTC
+status: Unchecked
 record: -1
